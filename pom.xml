@@ -27,6 +27,18 @@
             <version>3.27.1</version>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>http://your-nexus-host:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>http://http://43.204.216.15:8081/repository/javaparser-maven-sample/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
     mvn clean package
@@ -58,15 +70,3 @@
         </plugins>
     </build>
 </project>
-<distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>Nexus Releases Repository</name>
-            <url>http://your-nexus-host:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Nexus Snapshots Repository</name>
-            <url>http://http://43.204.216.15:8081/repository/javaparser-maven-sample/</url>
-        </snapshotRepository>
-    </distributionManagement>
